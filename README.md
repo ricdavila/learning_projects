@@ -2,5 +2,8 @@
 
 Repositório com projetos feitos visando aprendizado e desenvolvimento de lógica. 
 
-- binary search *(busca binária)*
+## Algoritmos nesse repositório
+
+- Binary Search *(busca binária)*
+- Linked List *(lista encadeada)*
 
