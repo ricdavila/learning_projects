@@ -6,4 +6,5 @@ Repositório com projetos feitos visando aprendizado e desenvolvimento de lógic
 
 - Binary Search *(busca binária)*
 - Linked List *(lista encadeada)*
+- Selection Sort *(ordenação por seleção)*
 
