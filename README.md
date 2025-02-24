@@ -4,10 +4,10 @@ Repositório com projetos feitos visando aprendizado e desenvolvimento de lógic
 
 ## Algoritmos nesse repositório
 
-1. Selection Sort *(ordenação por seleção)*
-2. Binary Search *(busca binária)*
-3. Linked List *(lista encadeada)*
-
+1. Ordenação por Seleção *(selection sort)*
+2. Busca Binária *(binary search)*
+3. Lista Encadeada *(linked list)*
+4. Funções Recursivas *(fatorial, conjunctura de collatz, entre outros exemplos práticos de recursividade)*
 
 ## 1. Ordenação por Seleção
 
