@@ -7,7 +7,7 @@ Repositório com projetos feitos visando aprendizado e desenvolvimento de lógic
 1. Ordenação por Seleção *(selection sort)*
 2. Busca Binária *(binary search)*
 3. Lista Encadeada *(linked list)*
-4. Funções Recursivas *(fatorial, conjunctura de collatz, entre outros exemplos práticos de recursividade)*
+4. Funções Recursivas *(fatorial, conjunctura de collatz, algoritmo de euclides, entre outros exemplos práticos de recursividade)*
 
 ## 1. Ordenação por Seleção
 
