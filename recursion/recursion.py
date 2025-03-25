@@ -108,7 +108,71 @@ def euclides(a, b):
         # definimos 'a' = 'b' e fazemos com que 'b' = 'a % b' (resto da divisão inteira entre 'a' e 'b')
         return euclides(b, a % b)
 
+def maior(lista):
+    """
+    Encontra o maior valor dentro de uma determinada lista.
+
+    Entrada:
+    - lista : lista a ser percorrida para encontrar o maior valor
+
+    Retorno :
+    - o maior termo da lista
+    """
+    # caso-base
+    # faz uma verificação simples para retornar o maior valor caso a lista seja binária
+    # (ou seja, possua apenas dois termos)
+    if len(lista) == 2:
+        return lista[0] if lista[0] > lista[1] else lista[1]
+    else:
+        # compara sempre o 1° e 2° elemento da lista, removendo o menor e para que, ao
+        # fim, sobre apenas o maior valor da lista
+        if lista[0] > lista[1]:
+            lista.remove(lista[1])
+        else:
+            lista.remove(lista[0])
+
+        # executa o código novamente, porém, com 1 elemento a menos
+        return maior(lista)
+
+def inverter(n, invertido=0):
+    """
+    Inverte um número natural. Ex: 1234 -> 4321
+
+    Entrada :
+    - n (int) : número natural a ser invertido
+
+    Retorno :
+    - (int) : número invertido
+    """
+    # caso-base
+    if n == 0:
+        return invertido
+    
+    # a cada iteração, reduz-se 'n' em 1 unidade e aumenta-se 'invertido' em 1 unidade também. 
+    # ex com entrada 123: n = 12, invertido = 3; n = 1, invertido = 32; n = 0, invertido = 321
+    return inverter(n // 10, invertido * 10 + n % 10)
+
+
+def fibonacci(n, n1=0, n2=1):
+    """
+    Retorna o N-ésimo termo da sequência fibonacci.
+
+    Entrada :
+    - n (int) : posição do termo na sequência
+
+    Retorno :
+    - o N-ésimo termo da sequência
+    """
+    # caso-base
+    if n == 1:
+        return n1
+    
+    # utiliza 'n' como contador regressivo e progride na sequência fibonacci a partir de 'n1'
+    # e 'n2'
+    return fibonacci(n-1, n2, n1 + n2)
+
 
 if __name__ == "__main__" :
     # teste  
-    print(euclides(640, 1680))
+    print(fibonacci(5))
+    #print(inverter(1234567))

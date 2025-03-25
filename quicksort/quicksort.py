@@ -4,17 +4,7 @@ Github: https://github.com/ricdavila
 """
 
 def quicksort(lista):
-    """
-    Função para a ordenação de listas via Quicksort, usando particionamento 
-    e o conceito de divide-and-conquer.
-
-    Entrada: 
-    - lista : array a ser ordenado
-
-    Retorno:
-    - lista de elementos ordenados.
-    """
-
+    
     # caso-base
     if len(lista) < 2:
         return lista
